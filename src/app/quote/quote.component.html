@@ -7,7 +7,7 @@
       <div class="col-md-6">
         <div *ngFor='let quote of quotes;let i = index'>
           <div>
-            <h6 id={{i}}>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</h6>
+            <h6 id={{i}}>{{quote.name}} released on {{quote.completeDate|date|uppercase}}</h6>
             <button (click)='toggleDetails(i)' class="btn btn-primary">Click To View</button>
           </div>
   
