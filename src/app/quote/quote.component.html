@@ -11,8 +11,8 @@
             <button (click)='toggleDetails(i)' class="btn btn-primary">Click To View</button>
           </div>
 
-          <button (click)= 'upvote(i)'><i class="fas fa-thumbs-up" id="app"></i>Like{{quote.upvote}}</button>
-          <button (click)= 'downvote(i)'><i class="fas fa-thumbs-down" id="app"></i>Unlike{{quote.downvote}}</button>
+          <button (click)= 'upvote(i)'><a><i class="fas fa-thumbs-up" id="app"></i></a>{{quote.upvote}}</button>
+          <button (click)= 'downvote(i)'><a><i class="fas fa-thumbs-down" id="app"></i></a>{{quote.downvote}}</button>
           <div *ngIf='quote.showDescription'>
             <app-quote-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
 
