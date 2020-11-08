@@ -12,7 +12,7 @@
           </div>
 
           <button (click)= 'upvote(i)'><a><i class="fas fa-thumbs-up" id="app"></i></a>{{quote.upvote}}</button>
-          <button (click)= 'downvote(i)'><a><i class="fas fa-thumbs-down" id="app"></i></a>{{quote.downvote}}</button>
+          <button (click)= 'downvote(i)'><a><i class="fas fa-thumbs-down" id="ap"></i></a>{{quote.downvote}}</button>
           <div *ngIf='quote.showDescription'>
             <app-quote-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
 
