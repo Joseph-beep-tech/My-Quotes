@@ -9,6 +9,7 @@
           <div>
             <h6 id={{i}}>{{quote.name}} released on {{quote.completeDate|date|uppercase}}</h6>
             <button (click)='toggleDetails(i)' class="btn btn-primary">Click To View</button>
+            
           </div>
   
           <div *ngIf='quote.showDescription'>
