@@ -10,10 +10,12 @@
             <h6 id={{i}}>{{quote.name}} released on {{quote.completeDate|date|uppercase}}</h6>
             <button (click)='toggleDetails(i)' class="btn btn-primary">Click To View</button>
           </div>
-  
+
+          <button (click)= 'upvote(i)'><i class="fas fa-thumbs-up" id="app"></i>Like{{quote.upvote}}</button>
+          <button (click)= 'downvote(i)'><i class="fas fa-thumbs-down" id="app"></i>Unlike{{quote.downvote}}</button>
           <div *ngIf='quote.showDescription'>
             <app-quote-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
-            
+
           </div>
         </div>
       </div>
