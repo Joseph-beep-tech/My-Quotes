@@ -21,7 +21,12 @@ export class QuoteComponent implements OnInit {
     quote.completeDate = new Date(quote.completeDate)
     this.quotes.push(quote)
   }
-
+upvote(index){
+  this.quotes[index].upvote++
+}
+downvote(index){
+  this.quotes[index].downvote++
+}
   toggleDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
