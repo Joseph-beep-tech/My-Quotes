@@ -22,10 +22,10 @@ export class QuoteComponent implements OnInit {
     this.quotes.push(quote)
   }
 upvote(index){
-  this.quotes[index].upvote++
+  this.quotes[index].upvote++;
 }
 downvote(index){
-  this.quotes[index].downvote++
+  this.quotes[index].downvote++;
 }
   toggleDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
