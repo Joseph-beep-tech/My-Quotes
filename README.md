@@ -8,7 +8,7 @@ My-Quotes is a plartform that allows you to express your inner thoughts for the 
 2. User clicks Upvote, Downvote and Delete
 3. upvote and downvote is increased by 1 on each click
 ## Setup/Installation Requirements
-* Clone or download and unzip the repository from github, "https://github.com/Preston-Too/MyQuotes-App.git"
+* Clone or download and unzip the repository from github, "https://github.com/Joseph-beep-tech/My-Quotes.git"
 * If you have git Use this command git clone * to clone the project.
 * Run ng serve from your terminal
 ## Known Bugs
