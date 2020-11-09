@@ -23,4 +23,13 @@
    </div>
     </div>
     <p *ngIf='quotes.length > 5'>Congrats how creative you are.</p>
+
+    <div>
+      <p>{{author}}</p>
+      <p>{{description}}</p>
+      <p>{{date}}</p>
+      <button>{{best}}</button>
+      <button>{{worst}}</button>
+      <button class="btn-success" (click)= 'favoriteQuote()'>Best quote</button>
+    </div>
   </div>

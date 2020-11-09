@@ -43,7 +43,25 @@ deleteQuote(isComplete, index){
     }
   }
 }
+best:number;
+worst:number;
+author:string;
+id: number;
+date:Date;
+description:string;
+favoriteQuote(){
+  this.best=0;
 
+  for(let i=0; i< this.quotes.length; i++){
+    if(this.quotes[i].upvote> this.best){
+      this.best=this.quotes[i].upvote;
+      this.worst=this.quotes[i].downvote;     
+       this.author=this.quotes[i].name;
+       this.date=this.quotes[i].completeDate;
+       this.description=this.quotes[i].description;
+    }
+  }
+}
   constructor() { }
 
   ngOnInit(): void {
